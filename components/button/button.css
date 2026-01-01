@@ -1,0 +1,45 @@
+/* Base button styles */
+.qar-button {
+  display: inline-grid;
+  grid-auto-flow: column;
+  align-items: center;
+  cursor: pointer;
+  text-box-trim: both;
+  text-box-edge: cap alphabetic;
+  --size-base: 0.25rem;
+}
+
+.qar-button:hover {
+  background-color: var(--colors-muted-hover);
+}
+
+.qar-button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* Size variants */
+.qar-button--xs {
+  height: calc(var(--size-base) * 6);
+  padding-inline: 0.5rem;
+}
+
+.qar-button--sm {
+  height: calc(var(--size-base) * 8);
+  padding-inline: 1rem;
+}
+
+.qar-button--md {
+  height: calc(var(--size-base) * 10);
+  padding-inline: 1.5rem;
+}
+
+.qar-button--lg {
+  height: calc(var(--size-base) * 12);
+  padding-inline: 2rem;
+}
+
+.qar-button--xl {
+  height: calc(var(--size-base) * 14);
+  padding-inline: 2.5rem;
+}
