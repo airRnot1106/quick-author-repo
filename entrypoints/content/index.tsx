@@ -7,7 +7,7 @@ export default defineContentScript({
   async main(ctx) {
     const ui = createIntegratedUi(ctx, {
       position: 'inline',
-      anchor: 'nav[aria-label="GitHub Breadcrumb"]',
+      anchor: 'nav[aria-label="Breadcrumbs"] > ol',
       onMount(container) {
         const wrapper = document.createElement('div');
         wrapper.style.display = 'inline-grid';
